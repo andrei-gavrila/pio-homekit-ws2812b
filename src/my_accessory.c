@@ -176,7 +176,7 @@ homekit_server_config_t config =
                     ACCESSORY_INFORMATION,
                     .characteristics = (homekit_characteristic_t*[])
                     {
-                        HOMEKIT_CHARACTERISTIC(NAME, "HomeKitWS28128b"),
+                        HOMEKIT_CHARACTERISTIC(NAME, "HomeKitWS2812b"),
                         HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Andrei Gavrila"),
                         HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "200000000000"),
                         HOMEKIT_CHARACTERISTIC(MODEL, "HomeKit WS2812b"),
