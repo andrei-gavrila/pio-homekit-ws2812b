@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "typeinfo": "cpp",
+        "random": "cpp",
+        "homekit.h": "c"
+    }
+}
