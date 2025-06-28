@@ -178,7 +178,7 @@ homekit_server_config_t config =
                     {
                         HOMEKIT_CHARACTERISTIC(NAME, "HomeKitWS2812b"),
                         HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Andrei Gavrila"),
-                        HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "200000000000"),
+                        HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "111000000000"),
                         HOMEKIT_CHARACTERISTIC(MODEL, "HomeKit WS2812b"),
                         HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "0.1"),
                         HOMEKIT_CHARACTERISTIC(IDENTIFY, device_identify),
