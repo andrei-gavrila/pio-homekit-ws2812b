@@ -155,6 +155,17 @@ void srv_handle_set()
   server.send(200, "text/plain", "OK");
 }
 
+void srv_handle_reset()
+{
+  Serial.println("srv_handle_reset() - reset homekit storage, resetting...");
+
+  homekit_storage_reset();
+
+  ESP.restart();
+
+  server.send(200, "text/plain", "OK");
+}
+
 extern "C" void my_acessory_init(void);
 
 extern "C" homekit_server_config_t config;
@@ -218,10 +229,9 @@ void setup()
 
   server.on("/", srv_handle_index_html);
   server.on("/set", srv_handle_set);
+  server.on("/reset", srv_handle_reset);
 
   server.begin();
-
-  // homekit_storage_reset();
 
   my_acessory_init();
 
